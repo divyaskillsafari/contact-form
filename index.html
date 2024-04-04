@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form css</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+       /* background: linear-gradient(45deg, blue, red); */
+       background: url(form\ img.jpg);
+       background-repeat: no-repeat;
+       background-size: cover;
+       display: flex;
+       justify-content: center;
+       align-items: center; 
+       height: 100vh;
+    }
+    form{
+        font-size: x-small;
+        font-family: 'Bungee Spice', sans-serif;
+        background-color: wheat;
+        color: blue;
+        padding: 10px;
+        width: 400px;
+        padding-left: 100px;
+        margin: 0%;
+        border: 1px solid blueviolet;
+        border-radius: 5px;
+
+    }
+    label{
+         font-size: large;
+         font-family: 'Roboto Condensed', sans-serif;
+        display: block;
+        margin-top: 10px;
+        margin-bottom: 10px;
+       
+    }
+    input{
+         border-radius: 5px;      
+    }
+    button{
+        margin: 20px;
+      margin-left: 150px;
+      background-color: white;
+      color: black;
+    }
+
+</style>
+<body>
+    <form >
+        <h1> Student Registration form</h1>
+        <label>First Name</label>
+        <input type="text" name="first name" id="name" required>
+        <label>Last Name</label>
+        <input type="text" name="last name" id="">
+        <label>Email</label>
+        <input type="email" name="email" id="email" placeholder="Enter your email" required>
+        <label>Password</label>
+        <input type="password" name="password" id="password">
+        <label>Mobile No</label>
+        <input type="number" name="number" id="number"required>
+        <label>Date of birth</label>
+        <input type="date" name="date" id="date">
+        <label>Gender
+        <input type="radio" value="Male" name="gender" id="male">Male
+        <input type="radio" value="female" name="gender" id="female">female</label>
+        <label>Course</label>
+        <select>
+            <option value="course">---Choose a Course---</option>
+            <option value="">BCA</option>
+            <option value="">BBA</option>
+            <option value="">B.Tech</option>
+            <option value="">B.Com</option>
+        </select><br>
+           <button>submit</button>
+    </form>
+</body> 
+</html>
